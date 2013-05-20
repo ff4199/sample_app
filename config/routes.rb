@@ -1,5 +1,6 @@
 SampleApp::Application.routes.draw do
-   get "users/new"
+  # RESTful架构对应的uri地址
+  resources :users
 
   match '/', to: 'static_pages#home'
   
